@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initiL-scale=1.0">
+        <title>HTML-5</title>
+        <style>
+            dialog{
+                background-color: teal;
+                color:white;
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h3>This is dialog Tag</h3>
+            <p><b>(To create a new popupdialog on a web page)</b></p>
+        </center>
+        <hr>
+        <dialog id="dialogID">
+            <button type="button" id="closebutton">&times;</button>
+           
+            <h1>FULLSTACK..!</h1>
+            <p>Narendra Damodardas Modi is an Indian politician who has served as the 14th Prime Minister of India since May 2014. Modi was the Chief Minister of Gujarat from 2001 to 2014 and is the Member of Parliament (MP) for Varanasi. He is a member of the Bharatiya Janata Party (BJP)</p>
+        </dialog>
+        
+        <button type="button" id="openDialog">Open Dialog Tag</button>
+        <script>
+            document.getElementById("openDialog").onclick=function(){
+                document.getElementById("dialogID").show();
+
+            };
+
+            document.getElementById("closebutton").onclick=function(){
+                document.getElementById("dialogID").close();
+
+            };
+
+        </script>
+    </body>
+    </html>
